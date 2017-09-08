@@ -1,0 +1,25 @@
+{
+  "name": "meta-geta",
+  "version": "0.0.1",
+  "description": "Gets metadata from a variety of file formats",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-norwood-young/meta-geta.git"
+  },
+  "keywords": [
+    "metadata"
+  ],
+  "author": "Jason Norwood-Young (jason@10layer.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/j-norwood-young/meta-geta/issues"
+  },
+  "homepage": "https://github.com/j-norwood-young/meta-geta#readme"
+}
