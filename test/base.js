@@ -1,8 +1,16 @@
 import Meta from "../base-meta";
+import assert from "assert";
 
-var metafile = new Meta("test.xls");
+const filename = "test.xls"
 
-metafile.getMeta()
-.then(result => {
-	console.log(result);
-});
+var metafile = new Meta(filename);
+
+describe("get results", () => {
+	it("gets file stats", async () => {
+		metafile.getMeta()
+		.then(result => {
+			expect(result.basename).to.equal(filename); 
+			
+		});
+	});
+})
