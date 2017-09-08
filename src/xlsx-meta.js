@@ -1,11 +1,10 @@
 import baseMeta from "./base-meta";
-
-const fs = require("fs");
-const JSZip = require("jszip");
-const Parser = require("xml-json-parser");
+import fs from "fs";
+import JSZip from "jszip";
+import Parser from "xml-json-parser";
 var parser = new Parser();
 
-export default class docxMeta extends baseMeta {
+export default class xlsMeta extends baseMeta {
 	constructor(props) {
 		super(props);
 	}
@@ -71,5 +70,5 @@ export default class docxMeta extends baseMeta {
 				});
 			});
 		});
-	}
-};
+	};
+}
