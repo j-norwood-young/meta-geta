@@ -9,7 +9,7 @@ describe("get results", () => {
 	it("gets pdf data", (done) => {
 		metafile.getMeta()
 		.then(result => {
-			console.log(result);
+			// console.log(result);
 			expect(result.properties.author).toEqual("Jason Norwood-Young");
 		})
 		.then(() => done(), done);
