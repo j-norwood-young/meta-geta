@@ -1,16 +1,16 @@
-import Meta from "../src/base-meta";
+import Meta from "../src/xlsx-meta";
 import expect from "expect";
 
-const filename = "./test/test.xls"
+const filename = "./test/test.xlsx"
 
 var metafile = new Meta(filename);
 
 describe("get results", () => {
-	it("gets file stats", (done) => {
+	it("gets xlsx data", (done) => {
 		metafile.getMeta()
 		.then(result => {
 			// console.log(result);
-			expect(result.basename).toEqual("test.xls"); 
+			expect(result.properties.author).toEqual("Maarten Balliauw");
 		})
 		.then(() => done(), done);
 	});
